@@ -1,0 +1,119 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box; 
+}
+
+nav {
+      margin: 10px;
+      padding: 5px 10px;
+      border-radius: 20px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.logo h1 {
+      text-transform: uppercase;
+}
+
+.menu ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      text-transform: uppercase;
+}
+
+.extra-nav {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+}
+
+.searchBox {
+      background-color: #dadada;
+      padding: 0px 4px;
+      border-radius: 50px;
+}
+
+#search {
+      width: 100px;
+      border: none;
+      outline: none;
+      padding: 6px 3px;
+      background: transparent;
+}
+
+.icon i {
+      font-size: 20px;
+}
+
+section {
+      height: 85vh;
+      /* background-color: aquamarine; */
+      display: flex;
+      justify-content: space-evenly;
+      padding: 10px;
+}
+
+.left{
+      width: 48%;
+      height: 100%;
+      /* background-color: cadetblue; */
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+      justify-content: space-between;
+}
+
+.left-upper{
+      height: 59%;
+      width: 100%;
+      background-color: rgb(156, 155, 153);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+}
+
+.heading {
+      font-size: 45px;
+      line-height: 60px;
+      text-transform: uppercase;
+}
+
+.heading img {
+      width: 100px;
+      height: 50px;
+      margin-left: 50px;
+}
+
+.left-lower{
+      height: 39%;
+      width: 100%;
+      padding: 5px;
+      /* background-color: darkviolet; */
+      display: flex;
+      justify-content: space-between;
+}
+
+.small-box{
+      width: 49%;
+      height: 100%;
+      background-color: lightgreen;
+      border-radius: 10px;
+      background: url('https://i.pinimg.com/736x/ab/33/6f/ab336f71732c4a478a507433fb7e0985.jpg');
+      background-size: cover;
+}
+
+.right{
+      width: 48%;
+      height: 100%;
+      background-color: darkturquoise;
+      border-radius: 10px;
+      background: url('/img.jpg');
+      background-size: cover;
+}
+
