@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    min-height: 100vh;
+    width: 100vw;
+    background: #222;
+}
+
+.container {
+    position: relative;
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: minmax(100px, auto);
+    margin: 40px;
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+}
+
+.container .box{
+    background: #333;
+    padding: 20px;
+    display: grid;
+    font-size: 20px;
+    place-items: center;
+    text-align: center;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.container .box:hover{
+    background: #fca311;
+}
+
+.container .box img {
+    position: relative;
+    max-width: 180px;
+    margin-bottom: 10px;
+}
+
+.container .box p{
+    font-size: 16px;
+    color: #999;
+}
+
+.container .box h1{
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.container .box:nth-child(1){
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.container .box:nth-child(2){
+    grid-column: span 1;
+    grid-row: span 2;
+
+}
+
+.container .box:nth-child(4){
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.container .box:nth-child(5){
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+.typewriter {
+    font-family: monospace;
+    font-size: 1.5rem;
+    margin-inline: auto;
+    overflow: hidden;
+    white-space: nowrap; /*keeps on a single line*/
+    border-right: 1px solid;
+    animation: typing 4s steps(20) forwards,
+        blink 1s step-end infinite;
+    /* animation-iteration-count: infinite; */
+}
+
+.title{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.heart{
+    color: rgb(228, 66, 98);
+    font-size: 30px;
+    animation-name: dukpuk;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+@media (max-width: 991px){
+    .container {
+        
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+        grid-template-rows: minmax(auto, auto);
+    }
+
+    .container .box{
+        grid-column: unset !important;
+        grid-row: unset !important;
+    }
+}
+
+@keyframes typing {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+    
+}
+
+@keyframes blink {
+    50%{
+        border-color: transparent;
+    }
+}
+
+@keyframes dukpuk {
+    0%{
+        scale: 0;
+    }
+    100%{
+        scale: 1;
+    }
+}
