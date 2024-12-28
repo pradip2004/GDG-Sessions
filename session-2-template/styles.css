@@ -1,8 +1,41 @@
-/* paste font link  */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font name  */
+    
+    font-family: "Rubik", serif;
 }
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #222;
+}
+
+.container {
+    max-width: 80%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: minmax(100px, auto);
+    margin: 40px;
+    grid-gap: 10px;
+}
+
+.container .box{
+    background-color: #333;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+
 
